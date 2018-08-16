@@ -29,7 +29,7 @@ class Endereco {
 }
 
 
-$endereco = new Endereco ("Rua da Mata", "850", "Belém");
+$endereco = new Endereco ("########", "000", "####");
 echo $endereco;
 
 ?>

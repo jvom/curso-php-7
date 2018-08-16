@@ -33,7 +33,7 @@ class CPF extends Documento {
 }
 
 $doc = new CPF();
-$doc->setNumero("543.347.482-87");
+$doc->setNumero("000.000.000-00");
 
 var_dump($doc->Validar());
 
