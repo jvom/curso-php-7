@@ -8,7 +8,7 @@ interface Veiculo {
     public function trocarMarcha($marcha);
 }
 
- class Civi implements Veiculo {
+ class Civic implements Veiculo {
 
     public function acelerar($velocidade) {
         echo "O veículo acelerou até " .$velocidade. " km/h";
