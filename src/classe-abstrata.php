@@ -1,5 +1,8 @@
 <?php
-/* Interface: Define padrões */
+/*
+Classes Abstratas: Uma classe não pode ser instanciada diretamente, precisa de uma
+outra para poder ser acessados seus atributos e métodos
+*/
 
 interface Veiculo {
 
@@ -8,7 +11,7 @@ interface Veiculo {
     public function trocarMarcha($marcha);
 }
 
- class Civi implements Veiculo {
+abstract class Automovel  implements Veiculo {
 
     public function acelerar($velocidade) {
         echo "O veículo acelerou até " .$velocidade. " km/h";
@@ -18,14 +21,18 @@ interface Veiculo {
     }
     public function trocarMarcha($marcha) {
         echo "O veículo engatou a marcha " .$marcha;
+    }
+}
+
+class DelRey extends Automovel {
+    public function empurrar() {
 
     }
- }
+}
 
- $carro = new Civic();
+$carro = new DelRey();
 
- $carro->trocarMarcha(1);
-
+$carro->acelerar(200);
 
 
 
